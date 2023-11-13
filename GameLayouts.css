@@ -1,0 +1,92 @@
+.hexagon {
+    cursor: default;
+    position: relative;
+    width: 100px;
+    height: 57.73502691896258px;
+    background-color: #f0f0f0;
+    margin: 28.86751345948129px auto 0 auto;
+    box-shadow: 0 0 0px rgba(0,255,255,0);
+    border-left: solid 10px #ffffff;
+    border-right: solid 10px #ffffff;
+    display: grid;
+    transition: 0s;
+}
+
+.hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 70.71067811865474px;
+    height: 70.71067811865474px;
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 4.64466094067263px;
+    box-shadow: 0 0 0px rgba(0,255,255,0);
+    transition: 0s;
+}
+
+.hexagon:before {
+    top: -35.35533905932737px;
+    border-top: solid 14.142135623730951px #ffffff;
+    border-right: solid 14.142135623730951px #ffffff;
+}
+
+.hexagon:after {
+    bottom: -35.35533905932737px;
+    border-bottom: solid 14.142135623730951px #ffffff;
+    border-left: solid 14.142135623730951px #ffffff;
+}
+
+.hexagon span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 25px;
+    color: #f47721;
+    top: 5.773502691896257px;
+    left: 0;
+    width: 80px;
+    height: 46.1880px;
+    z-index: 2;
+    background: inherit;
+    transition: 0s;
+}
+
+.hexagon:hover {
+    width: 300px;
+    height: 173.20508075688775px;
+    background-color: #2b2f38;
+    margin: 86.60254037844388px auto 0 auto;
+    box-shadow: 0 0 50px rgba(0,255,255,1);
+    border-left: solid 10px #f47721;
+    border-right: solid 10px #f47721;
+}
+
+.hexagon:hover:before, .hexagon:hover:after {
+    width: 212.13203435596424px;
+    height: 212.13203435596424px;
+    transform: scaleY(0.5774) rotate(-45deg);
+    left: 33.93398282201788px;
+    box-shadow: 0 0 50px rgba(0,255,255,1);
+}
+
+.hexagon:hover:before {
+    top: -106.06601717798212px;
+    border-top: solid 14.142135623730951px #f47721;
+    border-right: solid 14.142135623730951px #f47721;
+}
+
+.hexagon:hover:after {
+    bottom: -106.06601717798212px;
+    border-bottom: solid 14.142135623730951px #f47721;
+    border-left: solid 14.142135623730951px #f47721;
+}
+
+.hexagon:hover span {
+    font-size: 25px;
+    color: #f47721;
+    top: 5.773502691896257px;
+    width: 280px;
+    height: 161.6581px;
+}
